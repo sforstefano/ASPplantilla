@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Calculadora", "Calculadora\", "{45E714A4-F175-42BB-8C9A-6DAC9A7961A6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64735"
+		Debug.AspNetCompiler.PhysicalPath = "Calculadora\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64735\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64735"
+		Release.AspNetCompiler.PhysicalPath = "Calculadora\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64735\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64735"
+		SlnRelativePath = "Calculadora\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45E714A4-F175-42BB-8C9A-6DAC9A7961A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E714A4-F175-42BB-8C9A-6DAC9A7961A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC013158-1CFA-4F9E-BAC4-1FB021EEB309}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalculadoraDual", "CalculadoraDual\", "{C9F19E82-5774-488B-9007-9A283601FB8F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50975"
+		Debug.AspNetCompiler.PhysicalPath = "CalculadoraDual\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50975\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50975"
+		Release.AspNetCompiler.PhysicalPath = "CalculadoraDual\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50975\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50975"
+		SlnRelativePath = "CalculadoraDual\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9F19E82-5774-488B-9007-9A283601FB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F19E82-5774-488B-9007-9A283601FB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1180CA62-D945-467B-8824-E7C1320CC3CB}
+	EndGlobalSection
+EndGlobal
