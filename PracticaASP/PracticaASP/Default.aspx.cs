@@ -21,7 +21,7 @@ public partial class _Default : System.Web.UI.Page
         if (Int32.TryParse(importe.Text, out valor))
         {
 
-            missatge = CalculImport(sender, e, valor);
+            
         }
         else
         {
@@ -32,7 +32,7 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
-    private String CalculImport(object sender, EventArgs e, int valor)
+    private String CalculImport(object sender, EventArgs e, decimal valor)
     {
         String dia;
         String mensaje = "";
@@ -51,7 +51,7 @@ public partial class _Default : System.Web.UI.Page
         return mensaje;
     }
 
-    private string diaSemana(int valor, int preu)
+    private string diaSemana(decimal valor, int preu)
     {
         int importe = 0;
         String mensaje = "";
@@ -77,11 +77,21 @@ public partial class _Default : System.Web.UI.Page
     protected void DropDownList1_SelectedIndexChanged2(object sender, EventArgs e)
     {
 
-        decimal pagado = decimal.Parse(importe.Text);
+        decimal pagado = 0;
+        String missatge = "";
+
+        pagado = decimal.Parse(importe.Text);
+
+        if (!pagado.Equals(null))
+        {
+            missatge = CalculImport(sender, e, pagado);
+        }
 
         String muestra = pagado.ToString();
 
         resul.Text = muestra;
+
+
 
 
 
