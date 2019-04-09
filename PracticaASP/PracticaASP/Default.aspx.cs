@@ -16,7 +16,7 @@ public partial class _Default : System.Web.UI.Page
     {
 
         int valor;
-        String missatge;
+        String missatge = "";
 
         if (Int32.TryParse(importe.Text, out valor))
         {
@@ -36,14 +36,19 @@ public partial class _Default : System.Web.UI.Page
     {
         String dia;
         String mensaje = "";
-        dia = importe.ID;
+        dia = DropDownList1.DataValueField;
+        System.Diagnostics.Debug.WriteLine("Estamos dentro de calculo de importe");
+
+        System.Diagnostics.Debug.WriteLine("El valor de dia es " + dia);
         switch (dia)
         {
             case "1":
                 mensaje = diaSemana(valor, 10);
+                System.Diagnostics.Debug.WriteLine("Es del tipo de dia 1");
                 break;
             case "2":
                 mensaje = diaSemana(valor, 14);
+                System.Diagnostics.Debug.WriteLine("Es del tipo de dia 2");
                 break;
         }
 
@@ -51,11 +56,13 @@ public partial class _Default : System.Web.UI.Page
         return mensaje;
     }
 
-    private string diaSemana(decimal valor, int preu)
+    private string diaSemana(decimal valor, decimal preu)
     {
-        int importe = 0;
+        decimal importe = 0;
         String mensaje = "";
+        
         importe = valor - preu;
+        System.Diagnostics.Debug.WriteLine("El importe a pagar es " + importe);
 
         if (importe > 0)
         {
@@ -78,23 +85,19 @@ public partial class _Default : System.Web.UI.Page
     {
 
         decimal pagado = 0;
-        String missatge = "";
+        String missatge = "Ejems";
 
         pagado = decimal.Parse(importe.Text);
 
+        System.Diagnostics.Debug.WriteLine("El importe de pagado es " + pagado);
+
         if (!pagado.Equals(null))
         {
+            System.Diagnostics.Debug.WriteLine("Estamos dentro de que no és null");
             missatge = CalculImport(sender, e, pagado);
         }
 
-        String muestra = pagado.ToString();
-
-        resul.Text = muestra;
-
-
-
-
-
+        resul.Text = missatge;
     }
 
 }
