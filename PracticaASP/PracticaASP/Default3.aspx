@@ -11,18 +11,18 @@
         més gran o més petit. Si l’usuari l’encerta en un nombre de vegades menor que N, ha guanyat, sinó, ha perdut.         <br />
         </span>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Número aleatori" />
+            <asp:Button ID="Button1" runat="server" Text="Número aleatori" OnClick="Button1_Click" />
             <br />
         <br />
         Intents:<br />
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" required ="true" Enabled ="false" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         <br />
         <br />
         Número:<br />
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" required ="true" Enabled ="false" ></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Try!" />
+        <asp:Button ID="Button2" runat="server" Enabled= "false" OnClick="Button2_Click" Text="Try!" />
         <br />
         <br />
         <!-- Shit I don't like but I have to -->
@@ -30,6 +30,7 @@
         <br />
         <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         <br />
+            <asp:Label ID="Label3" runat="server" Text="¿?"></asp:Label>
             <br />
         
     </form>
