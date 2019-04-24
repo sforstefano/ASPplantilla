@@ -4,25 +4,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
     <form id="form1" runat="server">
-       <h2>Nombre perfecte</h2>
+       <h2>Mastermind</h2>
        <span class="byline">Fer un algoritme que generi un nombre aleatori de 4 xifres. L’usuari llavors ha d’introduir 
         nombres de 4 xifres fins que l’encerti o be hagi fet N intents. El nombre d’intents també els ha d’introduir l’usuari.
         A cada nombre de 4 xifres que introdueixi l’usuari, el programa li ha de dir si el nombre que ha d’endevinar és
-        més gran o més petit. Si l’usuari l’encerta en un nombre de vegades menor que N, ha guanyat, sinó, ha perdut.         <br />
+        més gran o més petit. Si l’usuari l’encerta en un nombre de vegades menor que N, ha guanyat, sinó, ha perdut. 
+        <br />
         </span>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="Número aleatori" OnClick="Button1_Click" />
-            <br />
+        <br />
         <br />
         Intents:<br />
-        <asp:TextBox ID="TextBox1" runat="server" required ="true" Enabled ="false" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" required ="true" ></asp:TextBox>
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Comença" OnClick="Button1_Click" />
         <br />
         <br />
         Número:<br />
-        <asp:TextBox ID="TextBox2" runat="server" required ="true" Enabled ="false" ></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" ></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button2" runat="server" Enabled= "false" OnClick="Button2_Click" Text="Try!" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Try!" />
         <br />
         <br />
         <!-- Shit I don't like but I have to -->
