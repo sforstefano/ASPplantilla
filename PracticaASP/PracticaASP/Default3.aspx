@@ -27,11 +27,11 @@
         <br />
         <br />
         <!-- Shit I don't like but I have to -->
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Let's start" ></asp:Label>
         <br />
-        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
-            <asp:Label ID="Label3" runat="server" Text="¿?"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="¿?" Visible ="False"></asp:Label>
             <br />
         
     </form>

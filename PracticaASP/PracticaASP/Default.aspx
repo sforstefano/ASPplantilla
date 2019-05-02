@@ -4,21 +4,21 @@
     <div class="wrapper style2">
 				            <section class="container">
 					            <header class="major">
-						            <h2>Nulla luctus eleifend</h2>
-						            <span class="byline">Mauris vulputate dolor sit amet nibh</span>
+						            <h2>This is ASP</h2>
+						            <span class="byline">Selecciona l'exercici d'ASP que vulguis</span>
 					            </header>
 					            <div class="row no-collapse-1">
 						            <section class="4u">
 							            <a href="#" class="image feature"><img src="images/pic02.jpg" alt=""></a>
-							            <p>Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat.</p>
+							            <p>Depenent del dia de la semana, pagarás més o menys.</p>
 						            </section>
 						            <section class="4u">
 							            <a href="#" class="image feature"><img src="images/pic03.jpg" alt=""></a>
-							            <p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis. Donec magna.</p>
+							            <p>Troba nombres perfectes.</p>
 						            </section>
 						            <section class="4u">
 							            <a href="#" class="image feature"><img src="images/pic04.jpg" alt=""></a>
-							            <p>Curabitur sem urna, consequat vel, suscipit convallis sem leo, mattis placerat, nulla. Sed ac leo.</p>
+							            <p>Esbrina el nombre ocult a la primera.</p>
 						            </section>
 	
 					            </div>

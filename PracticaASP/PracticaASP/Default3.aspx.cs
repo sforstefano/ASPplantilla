@@ -25,6 +25,13 @@ public partial class Default3 : System.Web.UI.Page
 
         String a = TextBox1.Text;
         TextBox1.Enabled = false;
+        
+
+        if (intents < 0)
+        {
+            intents = intents * -1;
+        }
+
         intents = Convert.ToInt32(a);
         Label2.Text = a;
         TextBox1.Attributes.Add("readonly", "readonly");
@@ -37,10 +44,12 @@ public partial class Default3 : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         intents = Convert.ToInt32(Label2.Text);
-        
-        
+        intents--;
+        Label2.Text = Convert.ToString(intents);
+        TextBox1.Text = Convert.ToString(intents);
 
-        if (intents > 0)
+
+        if (intents >= 1)
         {
             random = Convert.ToInt32(Label3.Text);
             int numero = Convert.ToInt16(TextBox2.Text);
@@ -57,10 +66,10 @@ public partial class Default3 : System.Web.UI.Page
                 Label1.Text = "Bingo!";
                 Button2.Enabled = false;
             }
-            intents--;
+            
 
-            Label2.Text = Convert.ToString(intents);
-            TextBox1.Text = Convert.ToString(intents);
+            
+            
             Label3.Text = Convert.ToString(random);
 
 
@@ -68,8 +77,11 @@ public partial class Default3 : System.Web.UI.Page
         }
         else
         {
+            Label1.Text = "Has perdut";
+            TextBox2.Enabled = false;
             Button2.Enabled = false;
         }
         
+
     }
 }
